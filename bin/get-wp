@@ -1,0 +1,9 @@
+wget http://wordpress.org/latest.tar.gz --no-check-certificate
+tar -zxvf latest.tar.gz
+rm latest.tar.gz
+mv wordpress/*.php ./
+mv wordpress/wp-admin/ ./
+mv wordpress/wp-includes/ ./
+rm -R wordpress
+
+echo 'All set!'
