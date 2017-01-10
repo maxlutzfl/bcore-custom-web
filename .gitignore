@@ -7,3 +7,4 @@ web/wp-includes/
 
 # ### Don't ignore
 !web/wp-content/themes/*
+!web/wp-content/plugins/*

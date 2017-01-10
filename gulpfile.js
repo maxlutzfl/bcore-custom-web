@@ -19,7 +19,7 @@ var browsersync = require('browser-sync'),
 	gulp = require('gulp');
 	autoprefix = require('gulp-autoprefixer'),
 	concat = require('gulp-concat'),
-	filsize = require('gulp-filesize'),
+	size = require('gulp-size'),
 	jshint = require('gulp-jshint'),
 	plumber = require('gulp-plumber'),
 	rename = require('gulp-rename'),
@@ -43,6 +43,7 @@ gulp.task(
 			.pipe(autoprefix())
 			.pipe(rename('main.css'))
 			.pipe(gulp.dest(baseCssDir))
+			.pipe(size({showFiles: true}))
 
 			// Run sass for minified CSS file
 			.pipe(sourcemap.init())
@@ -51,6 +52,7 @@ gulp.task(
 			.pipe(rename('main.min.css'))
 			.pipe(sourcemap.write('./'))
 			.pipe(gulp.dest(baseCssDir))
+			.pipe(size({showFiles: true}))
 		;
 	}
 );
@@ -70,6 +72,7 @@ gulp.task(
 			// Unminified
 			.pipe(concat('main.js'))
 			.pipe(gulp.dest(baseJsDir))
+			.pipe(size({showFiles: true}))
 
 			// Minify with sourcemap
 			.pipe(sourcemap.init())
@@ -77,6 +80,7 @@ gulp.task(
 			.pipe(uglify())
 			.pipe(sourcemap.write('./'))
 			.pipe(gulp.dest(baseJsDir))
+			.pipe(size({showFiles: true}))
 		;
 	}
 );

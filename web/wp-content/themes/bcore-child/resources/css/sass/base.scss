@@ -1,5 +1,7 @@
 @import 'mixins';
 
+@import 'vendor/reset';
+
 html {
 	display: block;
 }
@@ -7,3 +9,4 @@ html {
 p {
 	@include clearfix;
 }
+
