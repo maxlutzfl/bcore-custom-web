@@ -1,3 +1,6 @@
+# Downloads latest version of WP, excludes wp-content directory
+# If permission denied run `chmod u+x bin/get-wp`
+
 wget http://wordpress.org/latest.tar.gz --no-check-certificate
 tar -zxvf latest.tar.gz
 rm latest.tar.gz
