@@ -11,5 +11,5 @@ define('BCORE_PARENT_CONFIG_DIRECTORY', get_template_directory() . '/Config');
 define('BCORE_PARENT_RESOURCES_DIRECTORY', get_template_directory_uri() . '/Resources');
 
 /** Initilize theme config */
-require BCORE_PARENT_CONFIG_DIRECTORY . '/BcoreConfig.php';
+require_once BCORE_PARENT_CONFIG_DIRECTORY . '/BcoreConfig.php';
 new Config\BcoreConfig();
