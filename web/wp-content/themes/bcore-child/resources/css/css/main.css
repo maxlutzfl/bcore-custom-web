@@ -1,2 +1,7 @@
 html {
   display: block; }
+
+p:before, p:after {
+  content: "";
+  clear: both;
+  display: table; }
