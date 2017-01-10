@@ -1,8 +1,4 @@
 <?php
 /**
- * 
+ * Use a child theme
  */
-
-wp_head();
-
-wp_footer();

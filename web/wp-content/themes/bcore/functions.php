@@ -1,7 +1,6 @@
 <?php
 /**
- * functons.php
- * @package bcore
+ * functions.php
  */
 
 /** Define constants */
