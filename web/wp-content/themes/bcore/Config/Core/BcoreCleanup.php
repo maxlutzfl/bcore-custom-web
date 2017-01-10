@@ -3,7 +3,6 @@
  * BcoreCleanup.php
  */
 namespace Config\Core;
-
 use Config\BcoreConfig;
 
 class BcoreCleanup extends BcoreConfig {

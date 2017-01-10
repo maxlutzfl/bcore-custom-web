@@ -3,7 +3,6 @@
  * BcoreScriptsStyles.php
  */
 namespace Config\Core;
-
 use Config\BcoreConfig;
 
 class BcoreScriptsStyles extends BcoreConfig {
