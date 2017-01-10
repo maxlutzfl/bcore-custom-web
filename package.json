@@ -1,7 +1,7 @@
 {
   "name": "bcore-custom-web",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2017.1.0",
+  "description": "BrandCo custom web framework",
   "main": "index.js",
   "scripts": {},
   "repository": {
