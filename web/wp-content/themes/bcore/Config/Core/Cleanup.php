@@ -1,11 +1,11 @@
 <?php 
 /**
- * BcoreCleanup.php
+ * Cleanup.php
  */
 namespace Config\Core;
 use Config\BcoreConfig;
 
-class BcoreCleanup extends BcoreConfig {
+class Cleanup extends BcoreConfig {
 
 	public function __construct() {
 		add_action('init', array($this, 'cleanup'));

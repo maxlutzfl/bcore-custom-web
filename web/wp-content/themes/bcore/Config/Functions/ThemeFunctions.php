@@ -1,0 +1,4 @@
+<?php 
+/**
+ * ThemeFunctions.php
+ */

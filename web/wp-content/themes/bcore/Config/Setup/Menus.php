@@ -1,11 +1,11 @@
 <?php 
 /**
- * BcoreMenus.php
+ * Menus.php
  */
 namespace Config\Setup;
 use Config\BcoreConfig;
 
-class BcoreMenus extends BcoreConfig {
+class Menus extends BcoreConfig {
 		
 	public function __construct() {
 		

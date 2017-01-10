@@ -1,11 +1,11 @@
 <?php
 /**
- * BcoreLoginScreen.php
+ * LoginScreen.php
  */
 namespace Config\Core;
 use Config\BcoreConfig;
 
-class BcoreLoginScreen extends BcoreConfig {
+class LoginScreen extends BcoreConfig {
 
 	public function __construct() {
 		add_filter('login_headerurl', array($this, 'bcore_login_logo_url'));

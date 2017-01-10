@@ -1,11 +1,11 @@
 <?php 
 /**
- * BcoreScriptsStyles.php
+ * ScriptsStyles.php
  */
 namespace Config\Core;
 use Config\BcoreConfig;
 
-class BcoreScriptsStyles extends BcoreConfig {
+class ScriptsStyles extends BcoreConfig {
 
 	public function __construct() {
 		add_action('wp_enqueue_scripts', array($this, 'frontend'));

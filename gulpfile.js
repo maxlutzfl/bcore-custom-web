@@ -6,7 +6,7 @@
 var themeName = 'bcore-child',
 	developmentUrl = 'bcore.com.local',
 	baseThemeDir = 'web/wp-content/themes/' + themeName,
-	baseResourcesDir = baseThemeDir + '/resources',
+	baseResourcesDir = baseThemeDir + '/Resources',
 	baseSassFile = baseResourcesDir + '/css/sass/base.scss',
 	baseSassDir = baseResourcesDir + '/css/sass',
 	baseCssDir = baseResourcesDir + '/css/css',

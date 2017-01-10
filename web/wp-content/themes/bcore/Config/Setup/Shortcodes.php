@@ -1,11 +1,11 @@
 <?php
 /**
- * BcoreShortcodes.php
+ * Shortcodes.php
  */
 namespace Config\Setup;
 use Config\BcoreConfig;
 
-class BcoreShortcodes extends BcoreConfig {
+class Shortcodes extends BcoreConfig {
 
 	public function __construct() {
 		add_shortcode('button_shortcode', array($this, 'bcore_button_shortcode'));

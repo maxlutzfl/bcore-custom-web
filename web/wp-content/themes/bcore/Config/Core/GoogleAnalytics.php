@@ -1,11 +1,11 @@
 <?php 
 /**
- * BcoreGoogleAnalytics.php
+ * GoogleAnalytics.php
  */
 namespace Config\Core;
 use Config\BcoreConfig;
 
-class BcoreGoogleAnalytics extends BcoreConfig {
+class GoogleAnalytics extends BcoreConfig {
 
 	public function __construct() {
 		add_action('wp_footer', array($this, 'render'));

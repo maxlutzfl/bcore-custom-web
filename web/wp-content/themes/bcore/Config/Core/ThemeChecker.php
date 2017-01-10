@@ -1,11 +1,11 @@
 <?php 
 /**
- * BcoreThemeChecker.php
+ * ThemeChecker.php
  */
 namespace Config\Core;
 use Config\BcoreConfig;
 
-class BcoreThemeChecker extends BcoreConfig {
+class ThemeChecker extends BcoreConfig {
 
 	public function __construct() {
 		add_action('admin_bar_menu', array($this, 'admin_bar_dev_env'));

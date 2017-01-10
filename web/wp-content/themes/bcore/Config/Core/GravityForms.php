@@ -1,11 +1,11 @@
 <?php 
 /**
- * BcoreGravityForms.php
+ * GravityForms.php
  */
 namespace Config\Core;
 use Config\BcoreConfig;
 
-class BcoreGravityForms extends BcoreConfig {
+class GravityForms extends BcoreConfig {
 
 	public function __construct() {
 		add_filter('wp_mail_from', array($this, 'new_mail_from'));

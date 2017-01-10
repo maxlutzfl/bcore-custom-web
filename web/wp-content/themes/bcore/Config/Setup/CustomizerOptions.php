@@ -1,11 +1,11 @@
 <?php 
 /**
- * BcoreCustomizerOptions.php
+ * CustomizerOptions.php
  */
 namespace Config\Setup;
 use Config\BcoreConfig;
 
-class BcoreCustomizerOptions extends BcoreConfig {
+class CustomizerOptions extends BcoreConfig {
 
 	public function __construct() {
 		add_action('customize_register', array($this, 'setup'));

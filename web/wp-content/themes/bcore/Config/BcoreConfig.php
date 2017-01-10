@@ -4,27 +4,41 @@
  */
 namespace Config;
 
-require BCORE_PARENT_CONFIG_DIRECTORY . '/core/BcoreCleanup.php';
-require BCORE_PARENT_CONFIG_DIRECTORY . '/core/BcoreGoogleAnalytics.php';
-require BCORE_PARENT_CONFIG_DIRECTORY . '/core/BcoreScriptsStyles.php';
-require BCORE_PARENT_CONFIG_DIRECTORY . '/core/BcoreThemeChecker.php';
-require BCORE_PARENT_CONFIG_DIRECTORY . '/core/BcoreGravityForms.php';
-require BCORE_PARENT_CONFIG_DIRECTORY . '/core/BcoreLoginScreen.php';
-require BCORE_PARENT_CONFIG_DIRECTORY . '/setup/BcoreCustomizerOptions.php';
-require BCORE_PARENT_CONFIG_DIRECTORY . '/setup/BcoreMenus.php';
-require BCORE_PARENT_CONFIG_DIRECTORY . '/setup/BcoreShortcodes.php';
-
 class BcoreConfig {
 
 	public function __construct() {
-		new Core\BcoreCleanup();
-		new Core\BcoreGoogleAnalytics();
-		new Core\BcoreScriptsStyles();
-		new Core\BcoreThemeChecker();
-		new Core\BcoreGravityForms();
-		new Core\BcoreLoginScreen();
-		new Setup\BcoreCustomizerOptions();
-		new Setup\BcoreMenus();
-		new Setup\BcoreShortcodes();
+
+		require BCORE_PARENT_CONFIG_DIRECTORY . '/Core/Cleanup.php';
+		new Core\Cleanup();
+
+		require BCORE_PARENT_CONFIG_DIRECTORY . '/Core/GoogleAnalytics.php';
+		new Core\GoogleAnalytics();
+
+		require BCORE_PARENT_CONFIG_DIRECTORY . '/Core/ScriptsStyles.php';
+		new Core\ScriptsStyles();
+
+		require BCORE_PARENT_CONFIG_DIRECTORY . '/Core/ThemeChecker.php';
+		new Core\ThemeChecker();
+
+		require BCORE_PARENT_CONFIG_DIRECTORY . '/Core/GravityForms.php';
+		new Core\GravityForms();
+
+		require BCORE_PARENT_CONFIG_DIRECTORY . '/Core/LoginScreen.php';
+		new Core\LoginScreen();
+
+		require BCORE_PARENT_CONFIG_DIRECTORY . '/Setup/CustomizerOptions.php';
+		new Setup\CustomizerOptions();
+
+		require BCORE_PARENT_CONFIG_DIRECTORY . '/Setup/Menus.php';
+		new Setup\Menus();
+
+		require BCORE_PARENT_CONFIG_DIRECTORY . '/Setup/Shortcodes.php';
+		new Setup\Shortcodes();
+
+		require BCORE_PARENT_CONFIG_DIRECTORY . '/Setup/ThemeSetup.php';
+		new Setup\ThemeSetup();
+
+		require BCORE_PARENT_CONFIG_DIRECTORY . '/Setup/Sidebars.php';
+		new Setup\Sidebars();
 	}
 }
