@@ -1,10 +1,10 @@
-# ### Ignore
+### Ignore
 .DS_Store
 node_modules
 web/*.*
 web/wp-admin/
 web/wp-includes/
 
-# ### Don't ignore
+### Don't ignore
 !web/wp-content/themes/*
 !web/wp-content/plugins/*

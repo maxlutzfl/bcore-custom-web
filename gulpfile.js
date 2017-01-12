@@ -4,7 +4,6 @@
 
 // Setup
 var themeName = 'bcore-child',
-	developmentUrl = 'bcore.com.local',
 	baseThemeDir = 'web/wp-content/themes/' + themeName,
 	baseResourcesDir = baseThemeDir + '/Resources',
 	baseSassFile = baseResourcesDir + '/css/sass/base.scss',
@@ -90,16 +89,19 @@ gulp.task(
 	function() {
 		gulp.watch(baseSassDir + '/**/*.scss', ['bcore:css']);
 		gulp.watch(baseJsDir + '/theme/*.js', ['bcore:js']);
-		browsersync({
-			proxy: developmentUrl,
-			open: false,
-			ghostMode: false,
-			files: [
-				baseThemeDir + '**/*.php',
-				baseCssDir + 'main.css',
-				baseJsDir + 'main.js',
-			]
-		});
+		if ( process.argv.indexOf('--url') && process.argv.length === 4 ) {
+			var developmentUrl = process.argv[3];
+			browsersync({
+				proxy: developmentUrl,
+				open: false,
+				ghostMode: false,
+				files: [
+					baseThemeDir + '**/*.php',
+					baseCssDir + 'main.css',
+					baseJsDir + 'main.js',
+				]
+			});
+		}
 	}
 );
 
