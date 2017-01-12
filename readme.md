@@ -3,13 +3,14 @@
 
 ## Getting started
 
-**gulp.watch CSS and JS only --** 
+**gulp.watch SASS and Javascript changes and run BrowserSync**
+```sh
+$ gulp --url example.com.local
+```
+
+**or without BrowserSync** 
 ```sh
 $ gulp
 ```
 
-**gulp.watch with BrowserSync --**
-```sh
-$ gulp --url example.com.local
-```
 
