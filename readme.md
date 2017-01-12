@@ -3,7 +3,13 @@
 
 ## Getting started
 
-**gulp.watch CSS and JS only --** `$ gulp`
+**gulp.watch CSS and JS only --** 
+```sh
+$ gulp
+```
 
-**gulp.watch with BrowserSync --** - `$gulp --url example.com.local`
+**gulp.watch with BrowserSync --**
+```sh
+$ gulp --url example.com.local
+```
 
